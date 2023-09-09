@@ -1,0 +1,15 @@
+* {
+    background-color:rgb(29, 29, 37);
+    color: whitesmoke;
+}
+img.logo {
+    height: 75px;
+}
+
+ul.indice {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
