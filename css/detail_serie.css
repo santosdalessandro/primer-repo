@@ -1,0 +1,12 @@
+* {
+  background-color:rgb(29, 29, 37);
+  color: whitesmoke;
+}
+img {
+  height: 200px;
+}
+
+.descripcion-serie {
+  text-align: justify;
+  text-justify: inter-word;
+}

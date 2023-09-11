@@ -1,15 +1,75 @@
 * {
-    background-color:rgb(29, 29, 37);
-    color: whitesmoke;
+  background-color:rgb(29, 29, 37);
+  color: whitesmoke;
 }
 img.logo {
-    height: 75px;
+  height: 75px;
 }
 
 ul.indice {
-    flex-direction: row;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.search:hover {
+  opacity: 0.6;
+}
+
+.pelis-pop {
+  display: flex;
+  flex-direction: row;
+}
+
+.portadas-pelispop {
+  height: 200px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.portadas-pelispop:hover {
+  height: 220px;
+  transition: 0.6s;
+}
+
+.series-valoradas {
+  display: flex;
+  flex-direction: row;
+}
+
+.portadas-seriesvaloradas {
+  height: 200px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.portadas-seriesvaloradas:hover {
+  height: 220px;
+  transition: 0.6s;
+}
+
+.pelis-masvistas {
+  display: flex;
+  flex-direction: row;
+}
+
+.portadas-pelisvistas {
+  height: 200px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.portadas-pelisvistas:hover {
+  height: 220px;
+  transition: 0.6s;
+}
+
+.footer {
+  padding: 30px;
 }
