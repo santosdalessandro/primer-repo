@@ -1,0 +1,24 @@
+* {
+  background-color:rgb(29, 29, 37);
+  color: whitesmoke;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.series-valoradas {
+  display: flex;
+  flex-direction: row;
+}
+
+.portadas-seriesvaloradas {
+  height: 200px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.portadas-seriesvaloradas:hover {
+  height: 220px;
+  transition: 0.6s;
+}

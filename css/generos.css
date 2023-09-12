@@ -1,0 +1,40 @@
+* {
+  background-color:rgb(29, 29, 37);
+  color: whitesmoke;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.pelis-pop {
+  display: flex;
+  flex-direction: row;
+}
+
+.portadas-pelispop {
+  height: 200px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.portadas-pelispop:hover {
+  height: 220px;
+  transition: 0.6s;
+}
+
+.pelis-masvistas {
+  display: flex;
+  flex-direction: row;
+}
+
+.portadas-pelisvistas {
+  height: 200px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.portadas-pelisvistas:hover {
+  height: 220px;
+  transition: 0.6s;
+}
