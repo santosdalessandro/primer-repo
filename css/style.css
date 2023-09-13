@@ -3,15 +3,21 @@
   color: whitesmoke;
 }
 img.logo {
-  height: 75px;
+  height: 115px;
+}
+
+a {
+  text-decoration: none;
 }
 
 ul.indice {
   flex-direction: row;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 15px;
+  padding: 50px;
+  margin: 10px;
+  font-size: 20px;
 }
 
 ul {
