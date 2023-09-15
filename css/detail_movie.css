@@ -21,6 +21,7 @@ ul.indice {
   align-items: center;
   padding: 50px;
   margin: 10px;
+  font-family: "Oswald";
   font-size: 20px;
   box-sizing: border-box;
   border: solid 10px white;
@@ -28,6 +29,7 @@ ul.indice {
 
 form {
   text-align: center;
+  padding: 30px;
 }
 
 .search:hover {
@@ -36,6 +38,26 @@ form {
 
 ul {
   list-style-type: none;
+}
+
+h1{
+  font-family: "Oswald";
+  font-weight: 500;
+}
+
+p{
+  font-family: "Oswald";
+  font-weight: 200;
+}
+
+p.nombre-peli{
+  font-family: "Oswald";
+  font-weight: 500;
+}
+
+ul.descripcion{
+  font-family: "Oswald";
+  font-weight: 200;
 }
 
 img {

@@ -8,7 +8,6 @@ img.logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 a {
@@ -23,6 +22,7 @@ ul.indice {
   padding: 50px;
   margin: 10px;
   font-family: "Oswald";
+  font-weight: 500;
   font-size: 25px;
   box-sizing: border-box;
   border: solid 10px white;
@@ -30,6 +30,7 @@ ul.indice {
 
 form {
   text-align: center;
+  padding: 30px;
 }
 
 .search:hover {
@@ -40,11 +41,18 @@ ul {
   list-style-type: none;
 }
 
+h1{
+  font-family: "Oswald";
+  font-weight: 500;
+}
+
 .pelis-pop {
   display: flex;
   flex-direction: row;
   text-align: center;
   justify-content: center;
+  font-family: "Oswald";
+  font-weight: 200;
 }
 
 .portadas-pelispop {
@@ -62,6 +70,9 @@ ul {
   display: flex;
   flex-direction: row;
   text-align: center;
+  justify-content: center;
+  font-family: "Oswald";
+  font-weight: 200;
 }
 
 .portadas-seriesvaloradas {
@@ -79,6 +90,9 @@ ul {
   display: flex;
   flex-direction: row;
   text-align: center;
+  justify-content: center;
+  font-family: "Oswald";
+  font-weight: 200;
 }
 
 .portadas-pelisvistas {
@@ -96,6 +110,8 @@ ul {
   padding: 30px;
   display: flex;
   flex-direction: row;
+  font-family: "Oswald";
+  font-weight: 200;
 }
 
 @media (max-width: 420px){

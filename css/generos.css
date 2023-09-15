@@ -3,10 +3,6 @@
   color: whitesmoke;
 }
 
-ul {
-  list-style-type: none;
-}
-
 img.logo {
   height: 150px;
   display: block;
@@ -25,11 +21,16 @@ ul.indice {
   align-items: center;
   padding: 50px;
   margin: 10px;
-  font-size: 20px;
+  font-family: "Oswald";
+  font-weight: 500;
+  font-size: 25px;
+  box-sizing: border-box;
+  border: solid 10px white;
 }
 
 form {
   text-align: center;
+  padding: 30px;
 }
 
 .search:hover {
@@ -38,4 +39,19 @@ form {
 
 ul {
   list-style-type: none;
+}
+
+h1{
+  font-family: "Oswald";
+  font-weight: 500;
+}
+
+p.generos{
+  font-family: "Oswald";
+  font-weight: 500;
+}
+
+p{
+  font-family: "Oswald";
+  font-weight: 200;
 }

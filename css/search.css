@@ -2,6 +2,7 @@
   background-color:rgb(29, 29, 37);
   color: whitesmoke;
 }
+
 img.logo {
   height: 150px;
   display: block;
@@ -20,17 +21,56 @@ ul.indice {
   align-items: center;
   padding: 50px;
   margin: 10px;
-  font-size: 20px;
+  font-family: "Oswald";
+  font-weight: 500;
+  font-size: 25px;
+  box-sizing: border-box;
+  border: solid 10px white;
 }
 
 form {
   text-align: center;
+  padding: 30px;
 }
 
 .search:hover {
   opacity: 0.6;
 }
 
-ul {
+ul.indice {
   list-style-type: none;
+}
+
+h1{
+  font-family: "Oswald";
+  font-weight: 500;
+}
+
+p{
+  font-family: "Oswald";
+  font-weight: 200;
+}
+
+ul.sugerencias{
+  font-family: "Oswald";
+  font-weight: 200;
+}
+
+.series-valoradas {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  font-family: "Oswald";
+  font-weight: 200;
+}
+
+.portadas-seriesvaloradas {
+  height: 200px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.portadas-seriesvaloradas:hover {
+  height: 220px;
+  transition: 0.6s;
 }
