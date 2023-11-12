@@ -78,9 +78,14 @@ ul.sugerencias{
 .footer {
   padding: 30px;
   display: flex;
-  flex-direction: row;
   font-family: "Oswald";
   font-weight: 200;
-  flex-direction: column;
   align-items: center;
+  flex-direction: row;
+}
+
+.movieDB_logo {
+  height: 100px;
+  width: 100px;
+  padding-left: 430px;
 }
