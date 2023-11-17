@@ -1,7 +1,7 @@
 *{box-sizing: border-box;}
 
 body{
-  background-color: rgb(50, 54, 57);
+  background-color: rgb(29, 29, 37);
 }
 
 div.trailers{
@@ -63,7 +63,7 @@ button.lasRecomendaciones {
   font-family: 'Roboto', sans-serif;
   background: none;
 	border-radius:15px;
-	border:1px solid #f5e90e;
+	border:1px solid lightblue;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
@@ -73,7 +73,7 @@ button.lasRecomendaciones {
 
 a.hearts {
 width:4%;
-color: yellow;
+color: lightblue;
 margin-left: 4%;
 }
 
@@ -167,7 +167,7 @@ div.menuOculto a{
 
 ul.lista-generos li a:hover{
   font-size: 19px;
-  color: #c6f01d;
+  color: lightblue;
 }
 ul.lista-generos li{
   padding-bottom: 5px;

@@ -44,7 +44,7 @@ document.querySelector("a.favs").onclick = function(e) { //evento donde hago cli
 
 }
 
-fetch("https://api.themoviedb.org/3/movie/"+idBuscado+"?api_key=a6f60714320c532cb6f1c6ddeef46bac")
+fetch("https://api.themoviedb.org/3/movie/"+idBuscado+"?api_key=d354a91a93cd35091af35780dc100a8a")
 .then(function(response) {
   return response.json();
 })
@@ -128,7 +128,7 @@ setTimeout(function(){
   }
   }
 
-  fetch("https://api.themoviedb.org/3/movie/"+idBuscado+"/videos?api_key=a6f60714320c532cb6f1c6ddeef46bac&language=en-US")
+  fetch("https://api.themoviedb.org/3/movie/"+idBuscado+"/videos?api_key=d354a91a93cd35091af35780dc100a8a&language=en-US")
   .then(function(response) {
     return response.json();
   })

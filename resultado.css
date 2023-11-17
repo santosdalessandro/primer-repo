@@ -2,7 +2,7 @@
 
 
 body{
-  background-color: rgb(50, 54, 57);
+  background-color: rgb(29, 29, 37);
   /* overflow: hidden; */
 }
 .resultados{
@@ -79,7 +79,7 @@ div.uk-grid-margin{
   margin-top: 23px;
 }
 div#busqueda img:hover{
-  border: 2px solid yellow;
+  border: 2px solid lightblue;
 }
 
 h1.title{

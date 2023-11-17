@@ -1,7 +1,7 @@
 *{box-sizing: border-box;}
 
 body{
-    background-color: rgb(50, 54, 57);
+    background-color: rgb(29, 29, 37);
 }
 main h2 {
   color: white;
@@ -22,7 +22,7 @@ main h2 {
 }
 
 .padrefav ul li h3 a{
-  color: #c6f01d;
+  color: lightblue;
   font-family: 'Oswald', serif;
   font-size: 20px;
 }
