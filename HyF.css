@@ -1,0 +1,117 @@
+*{box-sizing: border-box;}
+
+body{
+  background-color: rgb(29, 29, 37);
+}
+
+header{
+  background-color: black;
+  display: flex;
+  align-items: center;
+  height: 110px;
+  justify-content: space-between;
+}
+
+header h1{
+  color: whitesmoke;
+  font-size: 50px;
+  font-family: 'Bowlby One SC';
+  margin: 0;
+  order: 2;
+width: 33.3%;
+text-align: center;
+margin-left: 3%;
+}
+
+header img{
+  width: 15%;
+}
+
+header form.form-buscador{
+  display: flex;
+  align-items: center;
+  order: 3;
+  margin-right: 10px;
+  width: 33.3%;
+}
+/*filtro */
+header form.form-buscador i.fas{
+    color: lightblue;
+    margin-left: 3px;
+    margin-right: 10px;
+}
+
+a.head{ /*palabra inicio*/
+  color: whitesmoke;
+  font-size: 20px;
+  margin-left: 15px;
+  order: 1;
+  font-family: 'Roboto', sans-serif;
+  width: 33.3%;
+}
+
+a.head:hover{
+  color: lightblue;
+}
+
+a.hearts{
+  color: whitesmoke;
+  margin-left: 3px;
+  margin-right: 8px;
+}
+a.hearts:hover{
+  color: lightblue;
+}
+a.fas fa-filter{
+  margin-right: 5px;
+}
+
+.fa-search{ /*estilo icono lupita*/
+  color: whitesmoke;
+  margin-right: 3px;
+}
+
+footer {
+  background-color: black;
+  height: 50px;
+}
+
+footer{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+/*tamaño img de footer logo tmdb*/
+footer img.TMDB {
+  width: 6%;
+}
+footer span{
+  color: white;
+  font-size: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+@media only screen and (min-width:992px){
+  header form.form-buscador{
+    min-width: 300px;
+  }
+}
+@media (max-width: 600px){
+  header{
+  flex-wrap: wrap;
+  display: flex;
+  }
+  header h1{
+      width: 100%;
+    font-size: 30px;
+    order: 0;
+  }
+  a.head{
+    width:50%;
+  }
+  form.form-buscador{
+    width:50%;
+    max-width: 145px;
+  }
+
+}

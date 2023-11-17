@@ -1,0 +1,239 @@
+*{box-sizing: border-box;}
+
+body{
+  background-color: rgb(50, 54, 57);
+
+}
+
+/* Buscador*/
+button#buscador {
+	color: black;
+}
+
+/*position a la derecha de la lupa*/
+form.form-buscador {
+	display: flex;
+	justify-content: flex-end;
+	padding: 10px;
+}
+
+/* cajita q deslice de la lupa*/
+form.form-buscador .buscadorsecundario {
+	width: 200px;
+	height: 20px;
+	border-radius: 4px;
+	transition: all 0.3s ease-in-out;
+}
+
+/* q al pretar enter se envie sin mostrar botton de la lupa*/
+form.form-buscador button[type="submit"] {
+	display: none;
+}
+
+/*q se ponga el pointer al pasar x la lupita y la separacion*/
+form.form-buscador i.fas {
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+/* q se esconda la cajita de la lupa */
+form.form-buscador .buscadorsecundario.inputHidden {
+	visibility: hidden;
+	width: 0px;
+}
+
+/* menu generos a la izquierda */
+div.menuOculto{
+  display: flex;
+  margin-left: 6px;
+}
+/*q se ponga el pointer en las 3 rayitas*/
+div.menuOculto i.fas { /*aca decia div.padre pero lo cambie HAY QUE FIJARSE SI SIGUE IGUAL PORQUE ANTES EN VEZ DE MAIN DECIA DIV*/
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+/* ocultar boton slide y solo mostrar las 3 rayitas*/
+div.menuOculto button[name="gender"]{
+  display: none;
+}
+/* sacarle color azul de link a las 3 rayitas*/
+div.menuOculto a{
+  color: inherit;
+}
+
+.padre{
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+/*diseño lista de generos*/
+.listadegeneros{
+  width: 20%;
+  position: relative;
+  top: 77px;
+  left: 2%;
+  margin-left: 1%;
+  margin-top: 8%;
+
+}
+.listadegeneros ul{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 200;
+  font-size: 17px;
+  padding-left: 40px;
+}
+.listadegeneros label{
+  color: white;
+  font-size: 27px;
+  font-family: 'Oswald', serif;
+  font-weight: 500;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+
+ul.lista-generos li a:hover{
+  font-size: 19px;
+  color: lightblue
+}
+ul.lista-generos li{
+  padding-bottom: 5px;
+}
+
+.listadegeneros ul a{
+  color: #F0F0F0;
+}
+/*sacarle color azul de link de filtro*/
+header a{
+  color: inherit;
+}
+/*sacarle color azul de link de filtro en hover*/
+header a:hover{
+  color: inherit;
+}
+
+/*form de busqueda avanzada*/
+form select{
+  width: 80%;
+  height: 20px;
+  border-radius: 8px;
+}
+form input{
+  width: 80%;
+  height: 20px;
+  border-radius: 8px;
+}
+ form button{
+   width: 50%;
+   height: 20px;
+   border: none;
+   border-radius: 6px;
+   background-color: lightblue;
+   margin-top: 25px;
+   margin-left: 40px;
+ }
+
+ p.busqueda{
+   font-weight: bold;
+   font-family: 'Roboto', sans-serif;
+   margin-top: 15px;
+   margin-bottom: 2px;
+ }
+
+ 
+/*Diseño columnas*/
+
+section.columnas{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  text-align: -webkit-center;
+  width: 75%;
+  margin-top: 1.5%;
+
+}
+
+
+.columnas article{
+  width: 21%;
+  margin-right: 10%;
+}
+.columnas article img{
+  width: 86%;
+}
+
+.titulo-populares {
+  color: white;
+  font-size: 25px;
+  font-family: 'Oswald', serif;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+.titulo-al-aire {
+  color: white;
+  font-size: 25px;
+  font-family: 'Oswald', serif;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+.titulo-mayor-puntaje {
+  color: white;
+  font-size: 25px;
+  font-family: 'Oswald', serif;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+
+/*diseño de previous and next botones*/
+button.slick-prev, button.slick-next {
+  margin-top: 13px;
+  margin-bottom: 13px;
+  background-color: lightblue;
+  border-radius: 42px;
+  border: 6px solid lightblue;
+  width: 35%;
+  height: 27px;
+  font-size: 13px;
+  color: rgb(50, 54, 57);
+  font-family: "Staatliches"
+}
+section.mobile{
+  margin-left: 7px; /*antes era 20 por si lo quieren cambiar*/
+  width: 80%;
+}
+section.mobile a{
+  margin-right: 10px;
+}
+
+.mobile {
+  display: none;
+}
+
+/* diseño mobile */
+section.desktop { position: static }
+section.mobile { display: none }
+
+@media (max-width: 600px) {
+  section.desktop {
+    display: none;
+  }
+  section.mobile, .mobile{
+    display: block;
+  }
+  .padre{
+    display: inherit;
+    width: 90%;
+  }
+  .sliderMobile{
+  margin-left: 20px;
+  }
+  .sliderMobile h3{
+    text-align: left;
+  }
+  .contenedorSliders{
+    width: 95%;
+    margin-left: 10%;
+    margin-top: 0%;
+  }
+}

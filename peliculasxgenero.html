@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="resultado.css">
+  <link rel="stylesheet" href="HyF.css">
+  <link rel="stylesheet" href="home.css">
+  <script src="https://kit.fontawesome.com/6a7542e233.js"></script>
+  <!--Ulkit CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/css/uikit.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&display=swap" rel="stylesheet">   <!-- SANTOS -->
+  <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre:400,500|Aleo:400,700|Arbutus+Slab|Bowlby+One+SC|EB+Garamond:400,500|Gilda+Display|Merriweather:300|Noto+Serif+SC:400,500|Roboto:100|Source+Serif+Pro|Special+Elite|Staatliches|Zilla+Slab:500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=BioRhyme+Expanded:800|Bowlby+One+SC&display=swap" rel="stylesheet">
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/css/uikit.min.css" />
+
+  <!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit-icons.min.js"></script>
+</head>
+<body>
+  <div class="error">
+
+  </div>
+  <header>
+    <a class="head" href= "home.html"><label for="">Inicio</label></a>
+  <h1>
+    <img src="img/logo.jpg" alt="">atch
+    <img src="img/logo.jpg" alt="">ave
+  </h1>
+    <form class="form-buscador" action="resultado.html" method="get" id="busqueda">
+      <input class="buscadorsecundario inputHidden" type="text" name="buscadorsecundario" placeholder="Buscador" value="">
+      <button type="submit">Enviar</button>
+      <i class="fas fa-search" id="lupita"></i>
+      <a href="favoritas.html" ><i class="fas fa-heart"></i></a>
+    </form>
+  </header>
+
+  <main>
+
+      <section class="resultados">
+        <h2 class="title"></h2>
+        <div id="busqueda" class="uk-grid-column-small uk-grid-row-large uk-child-width-1-3@s uk-text-center" uk-grid></div>
+        <div id="trigger" style="width: 10px; height: 10px;"></div>
+      </section>
+
+<!-- div para la alerta de error -->
+        <div class="error">
+
+        </div>
+
+  </main>
+
+
+  <footer>
+    <span> Santos D'Alessandro - Ignacio Merlja </span>
+    <img class="TMDB"src="https://www.themoviedb.org/assets/2/v4/logos/408x161-powered-by-rectangle-green-bb4301c10ddc749b4e79463811a68afebeae66ef43d17bcfd8ff0e60ded7ce99.png" alt="TMDB">
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit-icons.min.js"></script>
+  <script src="seleccionGenero.js" charset="utf-8"></script>
+
+</body>
+</html>

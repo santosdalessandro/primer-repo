@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="HyF.css">
+  <link rel="stylesheet" href="infoxpelicula.css">
+  <script src="infoxpelicula.js" charset="utf-8"></script>
+  <script src="https://kit.fontawesome.com/6a7542e233.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/css/uikit.min.css" />
+  <script src="peliculasxgenero.js" charset="utf-8"></script>
+
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="slick.css"/>
+  <script type="text/javascript" src="slick.min.js"></script>
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/css/uikit.min.css" />
+
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit-icons.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&display=swap" rel="stylesheet">   
+<link href="https://fonts.googleapis.com/css?family=Abhaya+Libre:400,500|Aleo:400,700|Arbutus+Slab|Bowlby+One+SC|EB+Garamond:400,500|Gilda+Display|Merriweather:300|Noto+Serif+SC:400,500|Roboto:100|Source+Serif+Pro|Special+Elite|Staatliches|Zilla+Slab:500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=BioRhyme+Expanded:800|Bowlby+One+SC&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!-- div para la alerta de error -->
+  <div class="error">
+
+  </div>
+  <header>
+    <a class="head" href= "home.html"><label for="">Inicio</label></a>
+  <h1>
+    <img src="img/logo.jpg" alt="">atch
+    <img src="img/logo.jpg" alt="">ave
+  </h1>
+    <form class="form-buscador" action="resultado.html" method="get" id="busqueda">
+      <input class="buscadorsecundario inputHidden" type="text" name="buscadorsecundario" placeholder="Buscador" value="">
+      <button type="submit">Enviar</button>
+      <i class="fas fa-search" id="lupita"></i>
+      <a href="favoritas.html" ><i class="fas fa-heart"></i></a>
+    </form>
+  </header>
+
+<main class="padre">
+
+<section class="listadegeneros desktop">
+<label for="">Generos</label>
+<div class="">
+  <ul class="lista-generos">
+
+  </ul>
+</div>
+
+</section>
+
+  <section class= "mobile">
+  <div class="menuOculto">
+
+    <button type="button" name="gender">Slide</button>
+    <a href="#offcanvas-izquierdo" uk-toggle><i class="fas fa-bars"></i></a>
+
+    <div id="offcanvas-izquierdo" uk-offcanvas>
+      <div class="uk-offcanvas-bar">
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+        <h2>Generos</h2>
+        <ul class="lista-generos">
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!--fin menu generos -->
+<div class="info">
+<div class="infoParticular">
+<div class="poster">
+<img src="https://pbs.twimg.com/profile_images/473506797462896640/_M0JJ0v8.png" alt="">
+</div>
+<div class="datos">
+<h1 class="nombre"> </h1>
+<p class="fechaDeOrigen"> </p>
+<p class="generosPertenecientes"> </p>
+<p class= "lenguaje">  </p>
+<p class="sinopsis"> </p>
+<button type="submit" name="button" class= "lasRecomendaciones"> Ver recomendaciones </button>
+<a href="" uk-icon="icon: heart" class="hearts favs"></a>
+</div>
+</div>
+<div class= "trailers">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</div>
+<!-- carousel de recomendados-->
+<div uk-slider class="losRecomendados">
+  <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+      <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m recomendados">
+      </ul>
+      <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+      <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+  </div>
+  <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+</div>
+</div>
+  </main>
+
+  <footer>
+    <span> Santos D'Alessandro - Ignacio Merljak </span>
+    <img class="TMDB"src="https://www.themoviedb.org/assets/2/v4/logos/408x161-powered-by-rectangle-green-bb4301c10ddc749b4e79463811a68afebeae66ef43d17bcfd8ff0e60ded7ce99.png" alt="TMDB">
+  </footer>
+</body>
+
+</html>

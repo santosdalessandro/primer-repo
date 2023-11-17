@@ -1,0 +1,232 @@
+*{box-sizing: border-box;}
+
+body{
+  background-color: rgb(50, 54, 57);
+}
+
+div.trailers{
+  margin-left: 8%;
+margin-bottom: 3%;
+margin-top: 3%;
+}
+
+main.padre{
+  display: flex;
+  color: white;
+  margin-right: 5%;
+}
+
+div.losRecomendados{
+width: 58%;
+margin-left: 259px;
+display: none;
+}
+
+a.head{
+  cursor:pointer;
+}
+
+div.infoParticular{
+  display:flex;
+}
+
+.ocultar{
+  width: 58%;
+margin-left: 259px;
+  display: block;
+
+}
+div.recomendados{
+
+}
+div.datos{
+  margin-top: 5%;
+  font-family: 'Roboto', sans-serif;
+  width: 50%;
+}
+
+h1.nombre {
+      color: gray;
+      font-family: 'Zilla Slab', serif;
+      color: white;
+    }
+
+div.poster{
+  width: 44%;
+  margin-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+button.lasRecomendaciones {
+  top: 240px;
+  left: 50%;
+  font-family: 'Roboto', sans-serif;
+  background: none;
+	border-radius:15px;
+	border:1px solid #f5e90e;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	padding:5px 14px;
+	text-decoration:none;
+}
+
+a.hearts {
+width:4%;
+color: yellow;
+margin-left: 4%;
+}
+
+p.trailer {
+  top: 250px;
+  left: 33%;
+font-family: 'Roboto', sans-serif;
+cursor: pointer;
+}
+
+/* Buscador*/
+button#buscador {
+	color: black;
+}
+
+/*position a la derecha de la lupa*/
+form.form-buscador {
+	display: flex;
+	justify-content: flex-end;
+	padding: 10px;
+}
+
+/* cajita q deslice de la lupa*/
+form.form-buscador .buscadorsecundario {
+	width: 200px;
+	height: 20px;
+	border-radius: 4px;
+	transition: all 0.3s ease-in-out;
+}
+
+/* q al pretar enter se envie sin mostrar botton de la lupa*/
+form.form-buscador button[type="submit"] {
+	display: none;
+}
+
+/*q se ponga el pointer al pasar x la lupita y la separacion*/
+form.form-buscador i.fas {
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+/* q se esconda la cajita de la lupa */
+form.form-buscador .buscadorsecundario.inputHidden {
+	visibility: hidden;
+	width: 0px;
+}
+
+/* menu generos a la izquierda */
+div.menuOculto{
+  display: flex;
+  margin-left: 6px;
+}
+/*q se ponga el pointer en las 3 rayitas*/
+div.menuOculto i.fas { /*aca decia div.padre pero lo cambie HAY QUE FIJARSE SI SIGUE IGUAL PORQUE ANTES EN VEZ DE MAIN DECIA DIV*/
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+/* ocultar boton slide y solo mostrar las 3 rayitas*/
+div.menuOculto button[name="gender"]{
+  display: none;
+}
+/* sacarle color azul de link a las 3 rayitas*/
+div.menuOculto a{
+  color: inherit;
+}
+
+
+
+/*diseño lista de generos*/
+.listadegeneros{
+  width: 43%;
+  position: relative;
+  top: 77px;
+  left: 2%;
+
+}
+.listadegeneros ul{
+  font-family: 'Oswald', serif;
+  font-weight: 200;
+  font-size: 17px;
+  padding-left: 40px;
+}
+.listadegeneros label{
+  color: white;
+  font-size: 27px;
+  font-family: 'Oswald', serif;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+
+ul.lista-generos li a:hover{
+  font-size: 19px;
+  color: #c6f01d;
+}
+ul.lista-generos li{
+  padding-bottom: 5px;
+}
+
+.listadegeneros ul a{
+  color: #F0F0F0;
+}
+/*sacarle color azul de link de filtro*/
+header a{
+  color: inherit;
+}
+/*sacarle color azul de link de filtro en hover*/
+header a:hover{
+  color: inherit;
+}
+
+/*form de busqueda avanzada*/
+form select{
+  width: 80%;
+  height: 20px;
+  border-radius: 8px;
+}
+form input{
+  width: 80%;
+  height: 20px;
+  border-radius: 8px;
+}
+ form button{
+   width: 50%;
+   height: 20px;
+   border: none;
+   border-radius: 6px;
+   background-color: #c6f01d;
+   margin-top: 25px;
+   margin-left: 40px;
+ }
+
+ p.busqueda{
+   font-weight: bold;
+   font-family: 'Roboto', sans-serif;
+   margin-top: 15px;
+   margin-bottom: 2px;
+ }
+
+/* diseño mobile */
+section.desktop { display: static }
+section.mobile { display: none }
+
+@media (max-width: 600px) {
+  section.desktop {
+    display: none;
+  }
+  section.mobile{
+    display: block;
+  }
+  div.trailers{
+    margin-left: 4%;
+  }
+}

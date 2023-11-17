@@ -1,0 +1,32 @@
+*{box-sizing: border-box;}
+
+body{
+    background-color: rgb(50, 54, 57);
+}
+main h2 {
+  color: white;
+  font-size: 30px;
+  font-family: 'Oswald', serif;
+  margin-left: 2%;
+}
+
+.padrefav ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.padrefav ul li{
+  margin-left: 4%;
+  margin-bottom: 4%;
+  list-style: none;
+}
+
+.padrefav ul li h3 a{
+  color: #c6f01d;
+  font-family: 'Oswald', serif;
+  font-size: 20px;
+}
+
+main{
+  min-height: 100vh;
+}
