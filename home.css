@@ -25,7 +25,7 @@ form.form-buscador .buscadorsecundario {
 	transition: all 0.3s ease-in-out;
 }
 
-/* q al pretar enter se envie sin mostrar botton de la lupa*/
+/* q al apretar enter se envie sin mostrar botton de la lupa*/
 form.form-buscador button[type="submit"] {
 	display: none;
 }
